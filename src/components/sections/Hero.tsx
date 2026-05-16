@@ -96,7 +96,7 @@ export default function Hero() {
               <div className="relative z-10 p-6 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 shadow-2xl">
                 <div className="rounded-2xl overflow-hidden aspect-[4/5]">
                   <img
-                    src="public/images/fira formal.jpeg"
+                    src="/images/fira formal.jpeg"
                     alt="Syafira"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"

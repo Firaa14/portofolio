@@ -8,14 +8,14 @@ const education = [
     school: "Universitas Brawijaya",
     period: "2024 - Sekarang",
     description: "Teknologi Informasi merupakan disiplin ilmu yang memadukan penguasaan perangkat lunak, infrastruktur jaringan, dan keamanan siber untuk mendukung transformasi digital. Fokus utama dari bidang ini adalah bagaimana mengintegrasikan teknologi ke dalam proses bisnis atau kehidupan sehari-hari, mulai dari pengembangan aplikasi web dan mobile, pengelolaan basis data yang masif (Big Data), hingga penerapan kecerdasan buatan (AI). Di sini, saya dilatih untuk tidak hanya memahami teknis pemrograman, tetapi juga memiliki kemampuan analitis dalam merancang arsitektur sistem yang aman, efisien, dan solutif.",
-    image: "public/images/fira foto1.jpeg"
+    image: "/images/fira foto1.jpeg"
   },
   {
     degree: "MIPA",
     school: "SMA Negeri 1 Sumberpucung",
     period: "2021 - 2024",
     description: "MIPA adalah bidang studi eksakta yang mendalami fenomena alam melalui logika matematika dan pendekatan ilmiah yang sistematis. Fokus utama jurusan ini adalah pengembangan kemampuan analisis, observasi data, dan penyelesaian masalah secara presisi. Melalui disiplin ilmu ini, saya mengasah pola pikir saintifik dan fundamental logika yang kuat untuk menghadapi tantangan teknis yang kompleks.",
-    image: "public/images/Fira-SMA.jpeg"
+    image: "/images/Fira-SMA.jpeg"
   }
 ];
 

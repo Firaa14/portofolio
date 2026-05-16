@@ -8,28 +8,28 @@ const projects = [
     title: "Pelatihan Logika Pemrograman Dasar dengan Scratch untuk Siswa SMPN 4 Batu",
     category: "Pendidikan dan Teknologi",
     description: "Proyek observasi lapangan yang bertujuan memperkenalkan konsep computational thinking kepada siswa SMPN 4 Kota Batu menggunakan platform visual Scratch. Program ini fokus pada pengembangan logika dasar dan pemecahan masalah melalui pendekatan pembelajaran interaktif.",
-    image: "public/images/SMPN 4 Batu.jpeg",
+    image: "/images/SMPN 4 Batu.jpeg",
     tags: ["Scratch", "Teknologi", "Logika Pemrograman"]
   },
   {
     title: "Studi Tradisi Unan-Unan Desa Ngadas",
     category: "Penelitian Budaya",
     description: "Penelitian lapangan mengenai pelestarian nilai-nilai kearifan lokal melalui tradisi Unan-Unan di Desa Ngadas. Proyek ini menganalisis peran tradisi adat dalam memperkuat integrasi sosial dan identitas masyarakat lokal.",
-    image: "public/images/ngadas.png",
+    image: "/images/ngadas.png",
     tags: ["Tradisi", "Bromo", "Kebudayaan"]
   },
   {
     title: "Sosialisasi Perguruan Tinggi: Campus Expo SMA",
     category: "Event Management",
     description: "Menginisiasi dan menyelenggarakan pameran pendidikan untuk membantu siswa menentukan jenjang studi lanjut. Mencakup koordinasi alumni, presentasi program studi, dan sesi konsultasi pemilihan jurusan.",
-    image: "public/images/campex.jpeg",
+    image: "/images/campex.jpeg",
     tags: ["Komunikasi", "Relasi", "Event Planning"]
   },  
   {
     title: "Pengembangan Website Travel Malang Raya",
     category: "Web Development",
     description: "Website untuk mempromosikan destinasi wisata di Malang Raya dengan fokus pada desain responsif dan pengalaman pengguna. Menyediakan informasi lengkap tentang tempat wisata, akomodasi, dan aktivitas lokal.",
-    image: "public/images/travio.png",
+    image: "/images/travio.png",
     link: "https://www.behance.net/gallery/244234591/TRAVIO",
     github: "https://github.com/Firaa14/TRAVIO-WEBSITE.git",
     tags: ["Web Development", "UI/UX Design", "Pariwisata"]
@@ -38,7 +38,7 @@ const projects = [
     title: "Egg Quality Detection System: AI-Powered Quality Control",
     category: "Artificial Intelligence",
     description: "Sistem kontrol kualitas berbasis kecerdasan buatan yang mendeteksi kondisi fisik telur melalui pemrosesan gambar. Model deep learning mencapai akurasi mAP50 sebesar 92% dalam mengklasifikasikan telur normal atau retak.",
-    image: "public/images/yolo.png",
+    image: "/images/yolo.png",
     github: "https://github.com/Firaa14/egg-detection.git",
     tags: ["Machine Learning", "Computer Vision", "Image Processing"]
   },
@@ -46,7 +46,7 @@ const projects = [
     title: "Hash Generator & Encryptor",
     category: "Cryptography",
     description: "Website untuk menghasilkan hash dan melakukan enkripsi data menggunakan berbagai algoritma kriptografi. Alat ini dirancang untuk memberikan solusi keamanan data yang efektif dan mudah digunakan.",
-    image: "public/images/hash cyber.png",
+    image: "/images/hash cyber.png",
     link: "https://cyber-sec-kel5.vercel.app",
     tags: ["Cryptography", "Security", "Data Protection"]
   },
@@ -54,7 +54,7 @@ const projects = [
     title: "Smart Fire Detection System pada Warehouse Berbasis IoT",
     category: "Internet of Things",
     description: "Sistem deteksi kebakaran berbasis IoT yang memanfaatkan sensor suhu dan api untuk memberikan peringatan dini. Menyediakan dashboard interaktif dengan data real-time dan notifikasi otomatis untuk meningkatkan keselamatan.",
-    image: "public/images/coming soon.png",
+    image: "/images/coming soon.png",
     link: "#",
     github: "#",
     tags: ["IoT", "Embedded Systems", "Real-time Data"]
