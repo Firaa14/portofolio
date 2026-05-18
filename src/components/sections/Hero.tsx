@@ -39,7 +39,7 @@ export default function Hero() {
 
             {/* Subtitle */}
             <p className="text-lg md:text-xl text-slate-300 leading-relaxed max-w-lg">
-              Penggemar Teknologi. Pengembang IoT. Inovator Kreatif. Membangun solusi digital yang menggabungkan fungsionalitas dengan desain elegan.
+              Mahasiswa Teknologi Informasi Universitas Brawijaya dengan minat besar di bidang Full-Stack Web Development, Back-End, dan Machine Learning. Selalu antusias untuk belajar hal baru dan saat ini terbuka untuk kesempatan magang (internship) maupun kolaborasi proyek kreatif. Yuk, terhubung!
             </p>
 
             {/* CTA Button */}

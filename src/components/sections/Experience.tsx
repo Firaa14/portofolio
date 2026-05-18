@@ -4,37 +4,21 @@ import { Briefcase, Calendar, Trophy } from 'lucide-react';
 
 const experiences = [
   {
-    title: "Technology Coordinator",
-    company: "HMTI (Himpunan Mahasiswa Teknologi Informasi)",
-    period: "2024 - Present",
-    description: "Memimpin inisiatif teknologi dan mengorganisir program pendidikan untuk mahasiswa TI, termasuk workshop coding, seminar industri, dan project showcase.",
-    tags: ["Leadership", "Event Coordination", "Community Building"],
+    title: "Olimpiade Vokasi Indonesia - Finalist",
+    company: "Forum Pendidikan Tinggi Vokasi Indonesia",
+    period: "2025",
+    description: "Finalis dalam kompetisi nasional di bidang Internet of Things dengan mengembangkan perangkat IoT untuk monitoring kualitas kebersihan makanan dalam program Makan Bergizi Gratis.",
+    tags: ["Team Work", "Internet of Things", "Problem Solving"],
     icon: Trophy
   },
   {
-    title: "Field Research Participant",
-    company: "Desa Ngadas - Cultural Heritage Project",
-    period: "2023 - 2024",
-    description: "Melakukan riset lapangan mendalam tentang pelestarian tradisi adat Unan-Unan, menganalisis nilai-nilai kearifan lokal dan dampaknya terhadap integrasi sosial masyarakat.",
-    tags: ["Research", "Cultural Studies", "Data Analysis"],
-    icon: Briefcase
-  },
-  {
-    title: "Campus Expo Organizer",
+    title: "Bendahara Campus Expo",
     company: "University Alumni Network",
-    period: "2023",
+    period: "2024 - 2025",
     description: "Memfasilitasi event pameran pendidikan untuk membantu siswa SMA menentukan jenjang studi lanjut, mengkoordinasikan presentasi program studi dan sesi sharing.",
-    tags: ["Event Management", "Communication", "Education"],
+    tags: ["Treasury", "Communication", "Education"],
     icon: Trophy
   },
-  {
-    title: "Technology Enthusiast & Self-Learner",
-    company: "Independent Projects",
-    period: "2021 - Present",
-    description: "Secara aktif mengembangkan berbagai proyek personal mencakup web development, AI/ML implementation, IoT systems, dan cryptography solutions dengan fokus pada practical problem-solving.",
-    tags: ["Full-Stack Development", "AI/ML", "IoT"],
-    icon: Briefcase
-  }
 ];
 
 export default function Experience() {
