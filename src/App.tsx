@@ -1,13 +1,12 @@
 import Navbar from './components/layout/Navbar';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
-import Interests from './components/sections/Interests';
+import TechStack from './components/sections/TechStack';
 import Education from './components/sections/Education';
-import Experience from './components/sections/Experience';
 import Projects from './components/sections/Projects';
 import Certificates from './components/sections/Certificates';
+import Honored from './components/sections/Honored';
 import Contact from './components/sections/Contact';
-import LoadingScreen from './components/ui/LoadingScreen';
 import { motion, useScroll, useSpring } from 'motion/react';
 
 export default function App() {
@@ -20,8 +19,6 @@ export default function App() {
 
   return (
     <div className="relative bg-[#0F172A] min-h-screen">
-      <LoadingScreen />
-      
       {/* Mesh Background Decoration */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-indigo-600/20 rounded-full blur-[120px]"></div>
@@ -40,10 +37,10 @@ export default function App() {
       <main className="relative z-10">
         <Hero />
         <About />
-        <Interests />
+        <TechStack />
         <Education />
-        <Experience />
         <Projects />
+        <Honored />
         <Certificates />
         <Contact />
       </main>

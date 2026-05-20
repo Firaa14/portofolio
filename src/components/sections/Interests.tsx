@@ -1,14 +1,14 @@
 import Section from '../layout/Section';
 import { motion } from 'motion/react';
-import { Code, Wifi, BookOpen, Utensils, Music, Heart } from 'lucide-react';
+import { Code, Music, Camera, Gamepad2, Leaf, Coffee } from 'lucide-react';
 
 const interests = [
-  { icon: Code, name: 'Coding', description: 'Vibe coding dan eksplorasi teknologi yangs serba cepat dan berkembang.', color: 'text-indigo-400', glassColor: 'bg-indigo-500/10' },
-  { icon: Wifi, name: 'IoT & Networking', description: 'Mempelajari teknologi otomatisasi dan jaringan serta keamanannya.', color: 'text-sky-400', glassColor: 'bg-sky-500/10' },
-  { icon: BookOpen, name: 'Reading', description: 'Membaca bisa memperluas wawasan dan pemahaman kan? membaca juga bisa ngubah cara kita berpikir dan bertindak. ', color: 'text-emerald-400', glassColor: 'bg-emerald-500/10' },
-  { icon: Utensils, name: 'Cooking', description: 'Masak bagi saya seperti healing walaupun dirumah.', color: 'text-orange-400', glassColor: 'bg-orange-500/10' },
-  { icon: Music, name: 'Music', description: 'Apapun aktivitasnya, musik itu bikin momen jadi lebih menyenangkan.', color: 'text-amber-400', glassColor: 'bg-amber-500/10' },
-  { icon: Heart, name: 'Vibing', description: 'Sekedar duduk diteras atau tiduran di kamar sama makan dan minuman favorit buat boost energi.', color: 'text-rose-400', glassColor: 'bg-rose-500/10' },
+  { icon: Code, name: 'Coding', color: 'text-indigo-400', bgColor: 'from-indigo-500/20 to-indigo-600/10' },
+  { icon: Coffee, name: 'Coffee', color: 'text-amber-400', bgColor: 'from-amber-500/20 to-amber-600/10' },
+  { icon: Music, name: 'Music', color: 'text-rose-400', bgColor: 'from-rose-500/20 to-rose-600/10' },
+  { icon: Camera, name: 'Photography', color: 'text-sky-400', bgColor: 'from-sky-500/20 to-sky-600/10' },
+  { icon: Leaf, name: 'Nature', color: 'text-emerald-400', bgColor: 'from-emerald-500/20 to-emerald-600/10' },
+  { icon: Gamepad2, name: 'Gaming', color: 'text-violet-400', bgColor: 'from-violet-500/20 to-violet-600/10' },
 ];
 
 export default function Interests() {
@@ -16,37 +16,29 @@ export default function Interests() {
     <Section 
       id="interests" 
       title="Yang Saya Sukai" 
-      subtitle="Hal-hal yang aku sukai dan kerjakan di waktu luang."
+      subtitle="Hal-hal yang membuat hidup lebih bermakna dan menyenangkan."
     >
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {interests.map((interest, i) => (
-          <motion.div
-            key={interest.name}
-            initial={{ opacity: 0, scale: 0.85 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.08 }}
-            whileHover={{ y: -8, backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
-            className="group glass p-6 md:p-8 rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300 flex flex-col h-full"
-          >
-            {/* Icon */}
+      <div className="flex justify-center">
+        <div className="grid grid-cols-3 gap-4 md:gap-6 max-w-2xl w-full">
+          {interests.map((interest, i) => (
             <motion.div
-              whileHover={{ scale: 1.1, rotate: 5 }}
-              className={`w-14 h-14 rounded-xl bg-gradient-to-br ${interest.glassColor} ${interest.color} flex items-center justify-center mb-6 group-hover:shadow-lg transition-all`}
+              key={interest.name}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: i * 0.05 }}
+              whileHover={{ y: -4, scale: 1.05 }}
+              className={`flex flex-col items-center justify-center gap-2 p-4 md:p-6 rounded-2xl border border-white/10 hover:border-white/30 backdrop-blur-sm transition-all duration-300 bg-gradient-to-br ${interest.bgColor} group cursor-pointer`}
             >
-              <interest.icon size={28} />
+              <div className={`p-2 md:p-3 rounded-lg ${interest.color}`}>
+                <interest.icon size={24} className="md:w-[28px] md:h-[28px]" />
+              </div>
+              <span className="text-xs md:text-sm font-semibold text-slate-200 text-center group-hover:text-white transition-colors">
+                {interest.name}
+              </span>
             </motion.div>
-
-            {/* Content */}
-            <h3 className="text-xl font-bold mb-3 text-white group-hover:text-indigo-300 transition-colors">{interest.name}</h3>
-            <p className="text-slate-300 leading-relaxed text-sm md:text-base flex-grow">{interest.description}</p>
-
-            {/* Bottom accent */}
-            <div className="mt-4 pt-4 border-t border-white/5">
-              <div className="inline-block w-8 h-1 bg-gradient-to-r from-indigo-500 to-sky-400 rounded-full group-hover:w-12 transition-all duration-300" />
-            </div>
-          </motion.div>
-        ))}
+          ))}
+        </div>
       </div>
     </Section>
   );

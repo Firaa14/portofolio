@@ -29,7 +29,13 @@ export default function Experience() {
       subtitle="Perjalanan pembelajaran dan kontribusi di berbagai bidang."
     >
       <div className="max-w-4xl mx-auto">
-        <div className="space-y-6">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="space-y-6"
+        >
           {experiences.map((exp, i) => {
             const IconComponent = exp.icon;
             return (
@@ -81,7 +87,7 @@ export default function Experience() {
               </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </Section>
   );

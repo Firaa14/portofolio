@@ -5,55 +5,58 @@ import { useState } from 'react';
 
 const projects = [
   {
-    title: "Pelatihan Logika Pemrograman Dasar dengan Scratch untuk Siswa SMPN 4 Batu",
-    category: "Pendidikan dan Teknologi",
-    description: "Proyek observasi lapangan yang bertujuan memperkenalkan konsep computational thinking kepada siswa SMPN 4 Kota Batu menggunakan platform visual Scratch. Program ini fokus pada pengembangan logika dasar dan pemecahan masalah melalui pendekatan pembelajaran interaktif.",
+    title: "Basic Programming Logic Training with Scratch for Students of SMPN 4 Batu",
+    category: "Educational and Technology",
+    description: "A field observation project aimed at introducing computational thinking concepts to students of SMPN 4 Batu through the visual programming platform Scratch. This program focused on developing fundamental logic and problem-solving skills using an interactive and engaging learning approach.",
     image: "/images/SMPN 4 Batu.jpeg",
-    tags: ["Scratch", "Teknologi", "Logika Pemrograman"]
+    link: "https://drive.google.com/file/d/19Toy8toxQauqiW4Zb2msJxDSwvJz7-2n/view?usp=drive_link",
+    tags: ["Scratch", "Technology", "Programming Logic"]
   },
   {
-    title: "Studi Tradisi Unan-Unan Desa Ngadas",
-    category: "Penelitian Budaya",
-    description: "Penelitian lapangan mengenai pelestarian nilai-nilai kearifan lokal melalui tradisi Unan-Unan di Desa Ngadas. Proyek ini menganalisis peran tradisi adat dalam memperkuat integrasi sosial dan identitas masyarakat lokal.",
+    title: "EYIP: Eyes on Your Ideal Plate",
+    category: "IoT and Embedded Systems",
+    description: "An innovative IoT-based food quality detection system designed to support the national Makan Bergizi Gratis (Free Nutritious Meals) program. The project integrates embedded sensors and machine learning algorithms to assess food cleanliness and nutritional quality, ensuring safe and healthy meals for the community.",
+    image: "/images/eyip.png",
+    link: "https://drive.google.com/file/d/1-Gcuj0SsWeF7uY-EMztnFVAnXPwuyMwl/view?usp=sharing",
+    tags: ["IoT", "Embedded Systems", "Food Quality"]
+  },
+  {
+    title: "Unan-Unan Tradition of Ngadas Village",
+    category: "Cultural Research",
+    description: "This field research investigates the preservation of local wisdom through the Unan-Unan tradition in Ngadas Village. The study aims to provide a deeper understanding of how this indigenous custom functions to reinforce social integration and sustain the cultural identity of the local community.",
     image: "/images/ngadas.png",
-    tags: ["Tradisi", "Bromo", "Kebudayaan"]
+    link: "https://youtu.be/l-NUDTVrGSg?si=u4JBLe-ZeWQs62M3",
+    tags: ["Cultural", "Bromo", "Research"]
   },
   {
-    title: "Sosialisasi Perguruan Tinggi: Campus Expo SMA",
-    category: "Event Management",
-    description: "Menginisiasi dan menyelenggarakan pameran pendidikan untuk membantu siswa menentukan jenjang studi lanjut. Mencakup koordinasi alumni, presentasi program studi, dan sesi konsultasi pemilihan jurusan.",
-    image: "/images/campex.jpeg",
-    tags: ["Komunikasi", "Relasi", "Event Planning"]
-  },  
-  {
-    title: "Pengembangan Website Travel Malang Raya",
+    title: "Malang Raya Travel Platform Development",
     category: "Web Development",
-    description: "Website untuk mempromosikan destinasi wisata di Malang Raya dengan fokus pada desain responsif dan pengalaman pengguna. Menyediakan informasi lengkap tentang tempat wisata, akomodasi, dan aktivitas lokal.",
-    image: "/images/travio.png",
-    link: "https://www.behance.net/gallery/244234591/TRAVIO",
+    description: "Developed a responsive travel platform to promote tourism in Greater Malang using Laravel and Tailwind CSS. The project prioritizes seamless user experience (UX) and clean design, providing comprehensive information on tourist attractions, accommodations, and local activities.",
+    image: "/images/travio preview.png",
+    link: "https://www.figma.com/proto/QfStr29kmbjUCMBdGGpf5j/UI-UX-SMT-3?node-id=823-806&p=f&t=dNoeoO9O9aoZWNrS-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=823%3A806",
     github: "https://github.com/Firaa14/TRAVIO-WEBSITE.git",
-    tags: ["Web Development", "UI/UX Design", "Pariwisata"]
+    tags: ["Web Development", "UI/UX Design", "Information Technology"]
   },
   {
-    title: "Egg Quality Detection System: AI-Powered Quality Control",
+    title: "YOLO - Based Egg Quality Detection System",
     category: "Artificial Intelligence",
-    description: "Sistem kontrol kualitas berbasis kecerdasan buatan yang mendeteksi kondisi fisik telur melalui pemrosesan gambar. Model deep learning mencapai akurasi mAP50 sebesar 92% dalam mengklasifikasikan telur normal atau retak.",
-    image: "/images/yolo.png",
+    description: "Developed a computer vision system leveraging YOLOv8 to automate quality control by classifying egg shell conditions (cracked, abnormal markings, and defect-free). Responsible for the end-to-end pipeline, encompassing dataset collection, image labeling, model training, evaluation, and optimization for real-world deployment.",
+    image: "/images/ai.png",
     github: "https://github.com/Firaa14/egg-detection.git",
     tags: ["Machine Learning", "Computer Vision", "Image Processing"]
   },
   {
     title: "Hash Generator & Encryptor",
     category: "Cryptography",
-    description: "Website untuk menghasilkan hash dan melakukan enkripsi data menggunakan berbagai algoritma kriptografi. Alat ini dirancang untuk memberikan solusi keamanan data yang efektif dan mudah digunakan.",
-    image: "/images/hash cyber.png",
+    description: "A web-based security tool designed to generate cryptographic hashes and perform data encryption using various algorithms. The platform focuses on delivering an intuitive user experience while providing efficient and reliable data security solutions.",
+    image: "/images/hash.png",
     link: "https://cyber-sec-kel5.vercel.app",
     tags: ["Cryptography", "Security", "Data Protection"]
   },
   {
-    title: "Smart Fire Detection System pada Warehouse Berbasis IoT",
+    title: "Smart IoT Fire Detection and Automated Suppression System",
     category: "Internet of Things",
-    description: "Sistem deteksi kebakaran berbasis IoT yang memanfaatkan sensor suhu dan api untuk memberikan peringatan dini. Menyediakan dashboard interaktif dengan data real-time dan notifikasi otomatis untuk meningkatkan keselamatan.",
+    description: "An IoT-based fire detection and automated mitigation system that utilizes temperature and flame sensors for early warning hazards. Featuring an interactive dashboard with real-time data and automated alerts, the system triggers an immediate response via an automated water sprinkler upon flame detection to prevent fire spread and enhance warehouse safety.",
     image: "/images/coming soon.png",
     link: "#",
     github: "#",
@@ -77,17 +80,17 @@ function ProjectCard({ project, index }) {
       className="group rounded-2xl overflow-hidden transition-all duration-500 border border-white/10 hover:border-indigo-500/30 flex flex-col h-full bg-white/[0.02] backdrop-blur-sm hover:bg-white/[0.05]"
     >
       {/* Image Section with Overlay Icons */}
-      <div className="relative aspect-[16/9] overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800">
+      <div className="relative aspect-[16/9] overflow-hidden bg-gradient-to-br from-slate-700 to-slate-600">
         <motion.img 
           whileHover={{ scale: 1.12 }}
           transition={{ duration: 0.7 }}
           src={project.image} 
           alt={project.title} 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover brightness-110 contrast-110"
           referrerPolicy="no-referrer"
         />
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/40 group-hover:bg-black/70 transition-all duration-300" />
+        {/* Subtle Overlay */}
+        <div className="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-all duration-300" />
         
         {/* Hover Action Icons */}
         <div className="absolute inset-0 flex items-center justify-center gap-6 opacity-0 group-hover:opacity-100 transition-all duration-300">
@@ -141,7 +144,7 @@ function ProjectCard({ project, index }) {
               onClick={() => setExpanded(!expanded)}
               className="mt-3 text-indigo-400 hover:text-indigo-300 text-xs font-semibold transition-colors"
             >
-              {expanded ? 'Sembunyikan' : 'Baca Selengkapnya'}
+              {expanded ? 'Show Less' : 'Show More '}
             </button>
           )}
         </div>
@@ -161,12 +164,18 @@ function ProjectCard({ project, index }) {
 
 export default function Projects() {
   return (
-    <Section id="projects" title="Proyek Saya" subtitle="Berikut adalah proyek yang pernah saya kerjakan, baik dalam bidang teknologi maupun non-teknologi.">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <Section id="projects" title="Project" subtitle="">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
         {projects.map((project, i) => (
           <ProjectCard key={project.title} project={project} index={i} />
         ))}
-      </div>
+      </motion.div>
     </Section>
   );
 }

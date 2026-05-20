@@ -8,9 +8,10 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Content */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="space-y-8"
           >
             {/* Badge */}
@@ -39,8 +40,10 @@ export default function Hero() {
 
             {/* Subtitle */}
             <p className="text-lg md:text-xl text-slate-300 leading-relaxed max-w-lg">
-              Mahasiswa Teknologi Informasi Universitas Brawijaya dengan minat besar di bidang Full-Stack Web Development, Back-End, dan Machine Learning. Selalu antusias untuk belajar hal baru dan saat ini terbuka untuk kesempatan magang (internship) maupun kolaborasi proyek kreatif. Yuk, terhubung!
+              Information Technology Student
             </p>
+            <p className="text-sm md:text-base text-slate-400 leading-relaxed max-w-md">
+              Backend Web Developer, IoT, and Machine Learning Enthusiast</p>
 
             {/* CTA Button */}
             <motion.div
@@ -54,7 +57,7 @@ export default function Hero() {
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center gap-3 px-8 md:px-10 py-4 md:py-5 bg-gradient-to-r from-indigo-500 to-indigo-600 text-white rounded-xl md:rounded-2xl font-bold shadow-lg shadow-indigo-500/30 hover:shadow-xl hover:shadow-indigo-500/40 transition-all duration-300"
               >
-                Jelajahi Karya Saya
+                Project Experiences
                 <ArrowRight size={20} />
               </motion.a>
             </motion.div>
@@ -67,16 +70,16 @@ export default function Hero() {
               className="grid grid-cols-3 gap-6 md:gap-8 pt-8 border-t border-white/10"
             >
               <div>
-                <div className="text-2xl md:text-3xl font-bold text-indigo-400">7+</div>
-                <p className="text-sm text-slate-400 mt-1">Proyek</p>
+                <div className="text-2xl md:text-3xl font-bold text-indigo-400">5+</div>
+                <p className="text-sm text-slate-400 mt-1">Project</p>
               </div>
               <div>
                 <div className="text-2xl md:text-3xl font-bold text-indigo-400">2+</div>
-                <p className="text-sm text-slate-400 mt-1">Tahun Belajar</p>
+                <p className="text-sm text-slate-400 mt-1">Years of Study</p>
               </div>
               <div>
-                <div className="text-2xl md:text-3xl font-bold text-indigo-400">11</div>
-                <p className="text-sm text-slate-400 mt-1">Keahlian Teknologi</p>
+                <div className="text-2xl md:text-3xl font-bold text-indigo-400">10+</div>
+                <p className="text-sm text-slate-400 mt-1">Tech Skills</p>
               </div>
             </motion.div>
           </motion.div>
@@ -84,8 +87,9 @@ export default function Hero() {
           {/* Right Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="relative hidden md:block"
           >
             <div className="relative">

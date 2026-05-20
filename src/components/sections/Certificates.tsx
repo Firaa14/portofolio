@@ -1,76 +1,71 @@
 import Section from '../layout/Section';
+import { motion } from 'motion/react';
 import FlipCard from '../ui/FlipCard';
 
-const certificates = [
+const certificates = 
+  [
   {
-    title: "Microsoft Office Desktop Application",
-    issuer: "Trust Training Partners with Universitas Brawijaya",
-    date: "Februari 2026",
-    description: "Sertifikasi ini menandai langkah awal saya dalam memahami penggunaan aplikasi Microsoft Office secara profesional, yang merupakan keterampilan penting untuk membangun karier di bidang Teknologi Informasi.",
-    imageUrl: "/images/ms office ub.png"
+    "title": "Microsoft Office Desktop Application",
+    "issuer": "Trust Training Partners with Universitas Brawijaya",
+    "date": "February 2026",
+    "description": "Validates professional proficiency in Microsoft Office applications, establishing essential administrative and documentation skills required in the Information Technology industry.",
+    "imageUrl": "/images/ms office ub.png"
   },
   {
-    title: "Membangun Lab Virtual & Dasar Linux",
-    issuer: "Komdigi",
-    date: "Februari 2026",
-    description: "Sertifikasi ini menandai langkah awal saya dalam memahami konsep dasar pembuatan lab virtual dan penggunaan sistem operasi Linux, yang merupakan fondasi penting untuk membangun karier di bidang Teknologi Informasi.",
-    imageUrl: "/images/dasar linux kondigi.png"
+    "title": "Building Virtual Labs & Linux Fundamentals",
+    "issuer": "Ministry of Communication and Digital Affairs (Komdigi)",
+    "date": "February 2026",
+    "description": "Covers foundational concepts of virtual environment configuration and core Linux operating system commands, serving as a critical infrastructure baseline for IT roles.",
+    "imageUrl": "/images/dasar linux kondigi.png"
   },
   {
-    title: "Introduction To Cloud Computing",
-    issuer: "Komdigi",
-    date: "Februari 2026",
-    description: "Sertifikasi ini menandai langkah awal saya dalam memahami konsep dasar komputasi cloud, yang merupakan fondasi penting untuk membangun karier di bidang Teknologi Informasi dengan fokus pada pengelolaan dan pengembangan aplikasi berbasis cloud.",
-    imageUrl: "/images/fondasi clous computing komdigi.png"
+    "title": "Introduction to Cloud Computing",
+    "issuer": "Ministry of Communication and Digital Affairs (Komdigi)",
+    "date": "February 2026",
+    "description": "Provides a comprehensive understanding of cloud computing core concepts, architecture, and deployment models tailored for modern cloud-based application management.",
+    "imageUrl": "/images/fondasi clous computing komdigi.png"
   },
   {
-    title: "Introduction to Cyber Security",
-    issuer: "CisCO Networking Academy",
-    date: "Februari 2026",
-    description: "Sertifikasi ini menandai langkah awal saya dalam memahami konsep dasar keamanan siber, yang merupakan fondasi penting untuk membangun karier di bidang Teknologi Informasi dengan fokus pada perlindungan data dan sistem digital.",
-    imageUrl: "/images/(BTCMP) Introduce to CyberSecurity - Cisco.png"
+    "title": "Introduction to Cyber Security",
+    "issuer": "Cisco Networking Academy",
+    "date": "February 2026",
+    "description": "Demonstrates a foundational understanding of cybersecurity principles, focusing on threat identification, data protection, and securing digital systems.",
+    "imageUrl": "/images/(BTCMP) Introduce to CyberSecurity - Cisco.png"
   },
   {
-    title: "Sertifikat Penghargaan Olimpiade Vokasi Indonesia X 2025",
-    issuer: "Forum Pendidikan Tinggi Vokasi Indonesia",
-    date: "Agustus 2025",
-    description: "Dalam kompetisi ini, saya berhasil meraih penghargaan sebagai finalis dari 1000+ peserta dan 100+ tim dari seluruh Indonesisa. Melalui kompetisi ini, saya mendapatkan pengalaman dalam bekerjasama dalam tim dan berkarya di bidang Internet of Things (IoT) untuk menciptakan solusi inovatif yang berdampak positif bagi masyarakat.",
-    imageUrl: "/images/olivia foto.png"
+    "title": "Introduction to Cybersecurity and Career Awareness",
+    "issuer": "Ministry of Communication and Digital Affairs (Komdigi)",
+    "date": "August 2025",
+    "description": "Acquired insights into cybersecurity landscapes, risk management, and strategic career path mapping within the rapidly growing digital security industry.",
+    "imageUrl": "/images/cyber.png"
   },
   {
-    title: "Introduction to Cybersecurity and Career Awareness",
-    issuer: "Komdigi",
-    date: "Agustus 2025",
-    description: "Melalui program ini, saya memperoleh wawasan mendalam mengenai dasar-dasar keamanan siber serta peluang karier di industri digital guna mendukung kesiapan profesional di era teknologi informasi.",
-    imageUrl: "/images/cyber.png"
+    "title": "Belajar Dasar Structured Query Language (SQL)",
+    "issuer": "Dicoding Indonesia",
+    "date": "April 2025",
+    "description": "Mastered fundamental relational database management concepts, data manipulation, and querying techniques essential for back-end development and data analysis.",
+    "imageUrl": "/images/belajar dasar sql.png"
   },
   {
-    title: "Belajar Dasar Structured Query Language (SQL)",
-    issuer: "Dicoding",
-    date: "April 2025",
-    description: "Saya telah menyelesaikan sertifikasi Belajar Dasar Structured Query Language (SQL) dari Dicoding Indonesia pada April 2025, yang membekali saya dengan kemampuan fundamental dalam pengelolaan serta manipulasi data relasional untuk kebutuhan pengembangan teknologi informasi.",
-    imageUrl: "/images/belajar dasar sql.png"
+    "title": "Foundational C# with Microsoft",
+    "issuer": "freeCodeCamp in partnership with Microsoft",
+    "date": "March 2025",
+    "description": "Certified in core C# programming concepts, covering object-oriented programming (OOP), data types, and logical structures under Microsoft's curriculum standard.",
+    "imageUrl": "/images/(BTCMP) freeCodeCamp - Microsoft.png"
   },
   {
-    title: "Foundational C# with Microsoft",
-    issuer: "Microsoft",
-    date: "Maret 2025",
-    description: "Sertifikasi Foundational C# with Microsoft ini menandai langkah awal saya dalam memahami bahasa pemrograman C#.",
-    imageUrl: "/images/(BTCMP) freeCodeCamp - Microsoft.png"
+    "title": "Belajar Dasar AI",
+    "issuer": "Dicoding Indonesia",
+    "date": "March 2025",
+    "description": "Explored the fundamental pillars of Artificial Intelligence, including machine learning basics and smart technology concepts, to build a future-ready tech career.",
+    "imageUrl": "/images/belajar dasar ai dicoding.png"
   },
   {
-    title: "Belajar Dasar AI",
-    issuer: "Dicoding",
-    date: "Maret 2025",
-    description: "Sertifikasi Belajar Dasar AI dari Dicoding Indonesia ini menandai langkah awal saya dalam mendalami dunia kecerdasan buatan, di mana saya berhasil menguasai konsep fundamental teknologi pintar untuk membangun fondasi karier yang kuat di bidang Teknologi Informasi.",
-    imageUrl: "/images/belajar dasar ai dicoding.png"
-  },
-  {
-    title: "Samsung Innovation Campus by Hacktiv8",
-    issuer: "Samsung / Hacktiv8",
-    date: "Desember 2024",
-    description: "Pada kesempatan ini, kemampuan logika dan penalaran analitis diuji dalam konteks teknologi masa depan, khususnya AI. Pengalaman ini memantapkan langkah saya untuk mendalami dunia Teknologi Informasi, dimana logika yang presisi adalah kunci utama dalam membangun solusi digital yang efektif.",
-    imageUrl: "/images/(BTCMP) Sertifikat SIC6.png" 
+    "title": "Samsung Innovation Campus",
+    "issuer": "Samsung & Hacktiv8 Indonesia",
+    "date": "December 2024",
+    "description": "Completed intensive training that evaluated logical reasoning, critical thinking, and problem-solving skills focused on future tech and AI implementation.",
+    "imageUrl": "/images/(BTCMP) Sertifikat SIC6.png"
   }
 ];
 
@@ -78,10 +73,16 @@ export default function Certificates() {
   return (
     <Section 
       id="certificates" 
-      title="Sertifikat" 
-      subtitle="Klik atau arahkan kursor untuk melihat sertifikat."
+      title="Certificates" 
+      subtitle="Click or hover to view certificates."
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8 max-w-7xl mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8 max-w-7xl mx-auto"
+      >
         {certificates.map((cert) => (
           <div key={cert.title}>
             <FlipCard
@@ -93,7 +94,7 @@ export default function Certificates() {
             />
           </div>
         ))}
-      </div>
+      </motion.div>
     </Section>
   );
 }

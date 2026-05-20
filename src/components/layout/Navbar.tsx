@@ -5,13 +5,13 @@ import { cn } from '@/src/lib/utils';
 import { COLORS, BORDER_RADIUS, TRANSITIONS } from '@/src/constants/design';
 
 const navItems = [
-  { name: 'Tentang', href: '#about' },
-  { name: 'Minat', href: '#interests' },
-  { name: 'Pendidikan', href: '#education' },
-  { name: 'Pengalaman', href: '#experience' },
-  { name: 'Proyek', href: '#projects' },
-  { name: 'Sertifikat', href: '#certificates' },
-  { name: 'Kontak', href: '#contact' },
+  { name: 'About', href: '#about' },
+  { name: 'Tech Stack', href: '#techstack' },
+  { name: 'Education & Experiences', href: '#education' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Awards', href: '#honored' },
+  { name: 'Certificates', href: '#certificates' },
+  { name: 'Contact', href: '#contact' },
 ];
 
 export default function Navbar() {
