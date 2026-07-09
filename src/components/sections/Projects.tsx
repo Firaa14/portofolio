@@ -57,7 +57,7 @@ const projects = [
     title: "Smart IoT Fire Detection and Automated Suppression System",
     category: "Internet of Things",
     description: "An IoT-based fire detection and automated mitigation system that utilizes temperature and flame sensors for early warning hazards. Featuring an interactive dashboard with real-time data and automated alerts, the system triggers an immediate response via an automated water sprinkler upon flame detection to prevent fire spread and enhance warehouse safety.",
-    image: "/images/SOPAN IOT.jpeg",
+    image: "/images/iot4.jpeg",
     link: "#",
     github: "#",
     tags: ["IoT", "Embedded Systems", "Real-time Data"]
