@@ -25,7 +25,7 @@ const projects = [
     category: "Cultural Research",
     description: "This field research investigates the preservation of local wisdom through the Unan-Unan tradition in Ngadas Village. The study aims to provide a deeper understanding of how this indigenous custom functions to reinforce social integration and sustain the cultural identity of the local community.",
     image: "/images/ngadas.png",
-    link: "https://youtu.be/l-NUDTVrGSg?si=u4JBLe-ZeWQs62M3",
+    link: "https://youtu.be/39DKM7dDKb4?si=LDBUVlOSKgahwSZA",
     tags: ["Cultural", "Bromo", "Research"]
   },
   {
@@ -57,7 +57,7 @@ const projects = [
     title: "Smart IoT Fire Detection and Automated Suppression System",
     category: "Internet of Things",
     description: "An IoT-based fire detection and automated mitigation system that utilizes temperature and flame sensors for early warning hazards. Featuring an interactive dashboard with real-time data and automated alerts, the system triggers an immediate response via an automated water sprinkler upon flame detection to prevent fire spread and enhance warehouse safety.",
-    image: "/images/coming soon.png",
+    image: "/images/SOPAN IOT.jpeg",
     link: "#",
     github: "#",
     tags: ["IoT", "Embedded Systems", "Real-time Data"]
