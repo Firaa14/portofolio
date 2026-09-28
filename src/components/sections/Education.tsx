@@ -12,22 +12,22 @@ const education = [
     image: "/images/fira foto1.jpeg",
     experiences: [
       {
-        year: "December 2025",
-        title: "AI Trainer — Egg Quality Detection System",
-        description: "Developed a computer vision system using YOLO to monitor egg quality by classifying shell conditions such as cracked shells, abnormal markings, and perfect eggs. Responsible for the full pipeline including dataset collection, image labeling, model training, evaluation, and optimization for real-world monitoring implementation.",
-        image: "/images/ai kelompok.jpeg"
+        year: "August - December 2026",
+        title: "IT Intern - System Owner at PT PLN Nusantara Power Unit Pembangkitan Brantas",
+        description: "Developed and maintained a web-based health mapping system for hydroelectric power plant units, focusing on asset reliability monitoring. Processed, analyzed, and organized asset reliability data using Microsoft Excel to support equipment condition assessment and maintenance monitoring.",
+        image: "/images/pln-logo.png"
       },
       {
-        year: "May - July 2025",
-        title: "Backend Developer — Olimpiade Vokasi Indonesia",
-        description: "As a Backend Web Developer in an IoT competition project that reached the Top 7 Finalists, building a system for food quality detection using IoT, AI, and web integration to support MBG (makan bergizi gratis) program.",
+        year: "July 2026 - Juli 2027",
+        title: "Bank Indonesia Scholarship Awardee",
+        description: "Awarded the Bank Indonesia Scholarship in recognition of academic performance, leadership potential, and commitment to personal and professional development.",
+        image: "/images/genbi-logo.png"
+      },
+      {
+        year: "July 2025",
+        title: "National Finalist - Olimpiade Vokasi Indonesia (OLIVIA X Universitas Brawijaya)",
+        description: "Developed an IoT-based food safety device for detecting biological contaminants for Free Nutritious Meals Program (MBG) and represented Universitas Brawijaya as a national finalist among 1,303 teams from 94 universities across Indonesia.",
         image: "/images/foto tim.jpg"
-      },
-      {
-        year: "May 2025",
-        title: "Instructor — Basic Programming Logic Training with Scratch at SMPN 4 Batu",
-        description: "Introduced fundamental programming concepts such as logic, sequencing, and problem-solving through interactive visual coding activities, while guiding students step by step to build simple projects in an engaging and easy-to-understand learning environment.",
-        image: "/images/smpn4.png"
       }
     ]
   },
@@ -182,7 +182,7 @@ export default function Education() {
         className="relative"
       >
         {/* Timeline Line */}
-        <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-indigo-500/30 via-indigo-500/20 to-transparent md:transform md:-translate-x-1/2" />
+        <div className="absolute left-6 top-0 bottom-0 w-1 bg-gradient-to-b from-indigo-500/30 via-indigo-500/20 to-transparent" />
 
         <div className="space-y-12">
           {education.map((edu, i) => (
@@ -192,10 +192,10 @@ export default function Education() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="relative pl-20 md:pl-0"
+              className="relative pl-20 md:pl-16"
             >
               {/* Timeline Dot */}
-              <div className="absolute left-0 top-6 w-12 h-12 md:left-1/2 md:transform md:-translate-x-1/2 md:top-0">
+              <div className="absolute left-0 top-6 w-12 h-12 md:top-0">
                 <motion.div
                   whileInView={{ scale: [0.8, 1.2, 1] }}
                   transition={{ duration: 0.6 }}
@@ -208,14 +208,14 @@ export default function Education() {
               {/* Main Card */}
               <motion.div
                 whileHover={{ scale: 1.02, backgroundColor: 'rgba(255, 255, 255, 0.06)' }}
-                className="group glass p-6 md:p-8 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 backdrop-blur-sm space-y-6"
+                className="group glass w-full p-6 md:p-8 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 backdrop-blur-sm space-y-6"
               >
                 {/* Header */}
                 <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
                   {/* Image */}
                   <motion.div
                     whileHover={{ scale: 1.08 }}
-                    className="w-48 h-48 md:w-56 md:h-56 flex-shrink-0 cursor-pointer"
+                    className="w-56 h-56 md:w-64 md:h-64 flex-shrink-0 cursor-pointer"
                     onClick={() => setSelectedImage({ url: edu.image, alt: edu.school })}
                   >
                     <div className="w-full h-full rounded-xl overflow-hidden border border-white/10 shadow-lg hover:shadow-xl hover:shadow-indigo-500/20 transition-all hover:border-indigo-500/30">

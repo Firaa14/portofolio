@@ -21,7 +21,7 @@ export default function Contact() {
           <div className="grid md:grid-cols-3 gap-6">
             {/* LinkedIn */}
             <motion.a
-              href="https://www.linkedin.com/in/syafira-firdausi-nuzulla-4b7127315"
+              href="https://www.linkedin.com/in/syafirafn"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02 }}

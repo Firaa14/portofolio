@@ -8,30 +8,22 @@ import {
   SiArduino, 
   SiPython,
   SiJavascript,
-  SiTailwindcss,
   SiLinux,
-  SiGit,
-  SiTypescript,
-  SiVite,
   SiFirebase
 } from 'react-icons/si';
-import { Zap } from 'lucide-react';
+import { BsMicrosoft } from 'react-icons/bs';
 
 const techStack = [
+  { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },
+  { name: 'Microsoft Office Applications', icon: BsMicrosoft, color: '#F25022' },
   { name: 'React', icon: SiReact, color: '#61DAFB' },
   { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
-  { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
-  { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },
-  { name: 'Python', icon: SiPython, color: '#3776AB' },
-  { name: 'MySQL', icon: SiMysql, color: '#00758F' },
-  { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
   { name: 'Arduino', icon: SiArduino, color: '#00979D' },
-  { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
+  { name: 'MySQL', icon: SiMysql, color: '#00758F' },
+  { name: 'Python', icon: SiPython, color: '#3776AB' },
   { name: 'Linux', icon: SiLinux, color: '#FCC624' },
-  { name: 'Git', icon: SiGit, color: '#F1502F' },
-  { name: 'Vite', icon: SiVite, color: '#646CFF' },
+  { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
   { name: 'Firebase', icon: SiFirebase, color: '#FFCA28' },
-  { name: 'Claude AI', icon: Zap, color: '#9B59B6' },
 ];
 
 export default function TechStack() {

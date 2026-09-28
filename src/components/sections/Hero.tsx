@@ -14,16 +14,6 @@ export default function Hero() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="space-y-8"
           >
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/30 backdrop-blur-sm"
-            >
-              <Sparkles size={14} className="text-indigo-400" />
-              <span className="text-xs font-semibold text-indigo-300 uppercase tracking-wider">Welcome</span>
-            </motion.div>
 
             {/* Main Heading */}
             <div className="space-y-4">
@@ -43,7 +33,7 @@ export default function Hero() {
               Information Technology Student
             </p>
             <p className="text-sm md:text-base text-slate-400 leading-relaxed max-w-md">
-              Backend Web Developer, IoT, and Machine Learning Enthusiast</p>
+              Information Technology Student at Universitas Brawijaya  | System Owner (IT) Intern at PT PLN Nusantara Power | Bank Indonesia Scholarship Awardee (GenBI)</p>
 
             {/* CTA Button */}
             <motion.div

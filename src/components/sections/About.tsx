@@ -25,7 +25,7 @@ export default function About() {
           </h3>
           <div className="space-y-6 text-slate-300">
             <p className="text-base md:text-lg leading-relaxed">
-              an Information Technology student with a strong interest in backend web development, Internet of Things (IoT), and machine learning. With a solid foundation in problem-solving and analytical thinking, I have developed various projects that integrate web systems, smart devices, and intelligent data processing.</p>
+              I'm an Information Technology student at Universitas Brawijaya with a strong focus on Back-End Development, IoT systems, and building scalable web applications. I have hands-on experience with Java, PHP, and C++, and have developed web-based systems using Node js and Laravel framework.</p>
             <p className="text-base md:text-lg leading-relaxed">
               I believe technology is a powerful tool for solving real-world problems. I am always eager to learn, explore new ideas, and contribute to building meaningful digital solutions that create real impact through connected systems and data-driven intelligence.</p>
           </div>

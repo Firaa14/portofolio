@@ -42,7 +42,7 @@ export default function Navbar() {
 
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8 text-sm font-medium">
+        <div className="hidden md:flex w-full items-center justify-center gap-8 text-sm font-medium">
           {navItems.map((item, i) => (
             <motion.a
               key={item.name}
@@ -77,7 +77,7 @@ export default function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden absolute top-full left-6 right-6 mt-2 bg-[#1e243a]/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/10 overflow-hidden"
           >
-            <div className="flex flex-col p-6 gap-4">
+            <div className="flex flex-col items-center p-6 gap-4 text-center">
               {navItems.map((item) => (
                 <a
                   key={item.name}
