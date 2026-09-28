@@ -40,7 +40,7 @@ const education = [
     experiences: [
       {
         year: "January 2025",
-        title: "Treasurer — Campus Expo Committee",
+        title: "Treasurer - Campus Expo Committee",
         description: "Served as Treasurer 1 in the Campus Expo committee, responsible for managing the event’s financial planning, budgeting, expense tracking, and financial reporting. Ensured transparent fund allocation, monitored cash flow throughout the event preparation and execution, and coordinated with other divisions to maintain efficient and accountable financial management.",
         image: "/images/bendahara expo.jpeg"
       },
