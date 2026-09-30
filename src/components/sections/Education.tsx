@@ -15,7 +15,7 @@ const education = [
         year: "August - December 2026",
         title: "IT Intern - System Owner at PT PLN Nusantara Power Unit Pembangkitan Brantas",
         description: "Developed and maintained a web-based health mapping system for hydroelectric power plant units, focusing on asset reliability monitoring. Processed, analyzed, and organized asset reliability data using Microsoft Excel to support equipment condition assessment and maintenance monitoring.",
-        image: "/images/pln-logo.png"
+        image: "/images/fira-foto-pln.jpeg"
       },
       {
         year: "July 2026 - Juli 2027",
