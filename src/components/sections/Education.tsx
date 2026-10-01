@@ -74,7 +74,7 @@ function DescriptionWithReadMore({ text, maxLines = 3 }: { text: string; maxLine
       <p
         ref={textRef}
         className={`text-slate-300 text-sm md:text-base leading-relaxed transition-all duration-300 ${
-          isExpanded ? '' : `line-clamp-${maxLines}`
+          isExpanded ? '' : 'line-clamp-3'
         }`}
       >
         {text}
@@ -127,7 +127,7 @@ function ExperienceDescriptionWithReadMore({ text, maxLines = 2 }: { text: strin
       <p
         ref={textRef}
         className={`text-xs md:text-sm text-slate-400 leading-relaxed transition-all duration-300 ${
-          isExpanded ? '' : `line-clamp-${maxLines}`
+          isExpanded ? '' : 'line-clamp-2'
         }`}
       >
         {text}
