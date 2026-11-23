@@ -14,7 +14,7 @@ export default function LoadingScreen() {
 
   return (
     <motion.div
-      className="fixed inset-0 z-[200] flex items-center justify-center bg-[#0F172A]"
+      className="fixed inset-0 z-[200] flex items-center justify-center bg-[#171719]"
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -26,7 +26,7 @@ export default function LoadingScreen() {
             borderRadius: ["25%", "50%", "25%"]
         }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        className="w-16 h-16 bg-gradient-to-tr from-indigo-500 to-rose-400"
+        className="w-16 h-16 bg-gradient-to-tr from-maroon-500 to-maroon-400"
       />
     </motion.div>
   );

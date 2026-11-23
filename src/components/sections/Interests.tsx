@@ -3,12 +3,12 @@ import { motion } from 'motion/react';
 import { Code, Music, Camera, Gamepad2, Leaf, Coffee } from 'lucide-react';
 
 const interests = [
-  { icon: Code, name: 'Coding', color: 'text-indigo-400', bgColor: 'from-indigo-500/20 to-indigo-600/10' },
-  { icon: Coffee, name: 'Coffee', color: 'text-amber-400', bgColor: 'from-amber-500/20 to-amber-600/10' },
-  { icon: Music, name: 'Music', color: 'text-rose-400', bgColor: 'from-rose-500/20 to-rose-600/10' },
-  { icon: Camera, name: 'Photography', color: 'text-sky-400', bgColor: 'from-sky-500/20 to-sky-600/10' },
-  { icon: Leaf, name: 'Nature', color: 'text-emerald-400', bgColor: 'from-emerald-500/20 to-emerald-600/10' },
-  { icon: Gamepad2, name: 'Gaming', color: 'text-violet-400', bgColor: 'from-violet-500/20 to-violet-600/10' },
+  { icon: Code, name: 'Coding', color: 'text-[#B85C68]', bgColor: 'from-[#830000]/20 to-[#660000]/10' },
+  { icon: Coffee, name: 'Coffee', color: 'text-[#B85C68]', bgColor: 'from-[#830000]/20 to-[#660000]/10' },
+  { icon: Music, name: 'Music', color: 'text-[#B85C68]', bgColor: 'from-[#830000]/20 to-[#660000]/10' },
+  { icon: Camera, name: 'Photography', color: 'text-[#B85C68]', bgColor: 'from-[#830000]/20 to-[#660000]/10' },
+  { icon: Leaf, name: 'Nature', color: 'text-[#B85C68]', bgColor: 'from-[#830000]/20 to-[#660000]/10' },
+  { icon: Gamepad2, name: 'Gaming', color: 'text-[#B85C68]', bgColor: 'from-[#830000]/20 to-[#660000]/10' },
 ];
 
 export default function Interests() {
@@ -33,7 +33,7 @@ export default function Interests() {
               <div className={`p-2 md:p-3 rounded-lg ${interest.color}`}>
                 <interest.icon size={24} className="md:w-[28px] md:h-[28px]" />
               </div>
-              <span className="text-xs md:text-sm font-semibold text-slate-200 text-center group-hover:text-white transition-colors">
+              <span className="text-xs md:text-sm font-semibold text-stone-200 text-center group-hover:text-white transition-colors">
                 {interest.name}
               </span>
             </motion.div>

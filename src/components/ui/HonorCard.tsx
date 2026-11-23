@@ -35,24 +35,24 @@ export default function HonorCard({
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
       >
         {/* Front Side */}
-        <div className="absolute inset-0 backface-hidden glass rounded-2xl p-6 flex flex-col justify-between group-hover:shadow-2xl group-hover:shadow-indigo-500/20 transition-all duration-300 border border-white/10 hover:border-indigo-400/30">
-          <div className="absolute top-0 right-0 w-24 h-24 bg-indigo-500/10 rounded-bl-3xl -mr-6 -mt-6 transition-all group-hover:bg-indigo-500/20 group-hover:scale-110" />
+        <div className="absolute inset-0 backface-hidden glass rounded-2xl p-6 flex flex-col justify-between group-hover:shadow-2xl group-hover:shadow-maroon-500/20 transition-all duration-300 border border-white/10 hover:border-[#830000]/30">
+          <div className="absolute top-0 right-0 w-24 h-24 bg-[#830000]/10 rounded-bl-3xl -mr-6 -mt-6 transition-all group-hover:bg-[#830000]/20 group-hover:scale-110" />
           
           <div className="relative z-10">
-            <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">{issuer}</p>
-            <h3 className="text-lg font-display font-bold leading-tight text-white mb-3 group-hover:text-indigo-300 transition-colors">{title}</h3>
-            <p className={`text-sm text-slate-400 leading-relaxed transition-all duration-300 ${isExpanded ? '' : 'line-clamp-3'}`}>
+            <p className="text-xs font-bold text-[#B85C68] uppercase tracking-widest mb-2">{issuer}</p>
+            <h3 className="text-lg font-display font-bold leading-tight text-white mb-3 group-hover:text-[#C99199] transition-colors">{title}</h3>
+            <p className={`text-sm text-stone-400 leading-relaxed transition-all duration-300 ${isExpanded ? '' : 'line-clamp-3'}`}>
               {description}
             </p>
             
             {/* Read More Button */}
             <motion.button
-              whileHover={{ color: '#818cf8' }}
+              whileHover={{ color: '#B85C68' }}
               onClick={(e) => {
                 e.stopPropagation();
                 setIsExpanded(!isExpanded);
               }}
-              className="mt-3 text-indigo-400 hover:text-indigo-300 text-xs font-semibold flex items-center gap-1 transition-colors"
+              className="mt-3 text-[#B85C68] hover:text-[#C99199] text-xs font-semibold flex items-center gap-1 transition-colors"
             >
               {isExpanded ? (
                 <>
@@ -69,8 +69,8 @@ export default function HonorCard({
           </div>
           
           <div className="flex items-center justify-between mt-4 pt-4 border-t border-white/5">
-            <span className="text-xs font-medium text-slate-500 uppercase tracking-tighter">{date}</span>
-            <div className="bg-white/5 p-2 rounded-xl text-slate-500 group-hover:text-indigo-300 transition-colors border border-white/5 group-hover:border-indigo-400/30">
+            <span className="text-xs font-medium text-stone-500 uppercase tracking-tighter">{date}</span>
+            <div className="bg-white/5 p-2 rounded-xl text-stone-500 group-hover:text-[#C99199] transition-colors border border-white/5 group-hover:border-[#830000]/30">
               <ExternalLink size={14} />
             </div>
           </div>

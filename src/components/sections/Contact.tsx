@@ -1,100 +1,133 @@
-import Section from '../layout/Section';
 import { motion } from 'motion/react';
-import { Linkedin, Github } from 'lucide-react';
+import { Mail, Linkedin, Github, Send, ArrowRight, Check, Copy } from 'lucide-react';
 import { SiInstagram } from 'react-icons/si';
+import { useState } from 'react';
 
 export default function Contact() {
+  const [copied, setCopied] = useState(false);
+  const email = "syafiranuzulla@student.ub.ac.id";
+
+  const copyEmail = () => {
+    navigator.clipboard.writeText(email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2500);
+  };
+
   return (
-    <Section id="contact" title="Find Me On" subtitle="">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        className="max-w-3xl mx-auto space-y-8"
-      >
-          {/* Intro */}
-          <p className="text-lg md:text-xl text-slate-300 leading-relaxed">
-            I am actively seeking opportunities to grow through internship programs or exciting technical collaborations. If you have an interesting project, collaboration offers, or simply want to exchange innovative ideas, my door is always open. Let’s build something amazing together!</p>
+    <section id="contact" className="py-20 md:py-28 relative overflow-hidden">
+      {/* Background radial glow */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-[#830000]/10 rounded-full blur-[150px] pointer-events-none" />
 
-          {/* Contact Methods */}
-          <div className="grid md:grid-cols-3 gap-6">
-            {/* LinkedIn */}
-            <motion.a
-              href="https://www.linkedin.com/in/syafirafn"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.02 }}
-              className="group glass p-6 md:p-8 rounded-2xl border border-white/10 hover:border-blue-500/30 transition-all duration-300"
-            >
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/20 to-blue-600/20 flex items-center justify-center flex-shrink-0 group-hover:from-blue-500/30 group-hover:to-blue-600/30 transition-all">
-                  <Linkedin size={24} className="text-blue-400" />
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
+        <div className="bg-[#242225] border border-white/10 hover:border-[#830000]/30 rounded-3xl p-8 sm:p-12 transition-all duration-300 shadow-2xl">
+          
+          <div className="grid lg:grid-cols-12 gap-8 items-center">
+            {/* Left text */}
+            <div className="lg:col-span-6 space-y-3">
+              <p className="text-xs uppercase tracking-[0.2em] font-bold text-[#A9A5A7]">
+                LET'S WORK TOGETHER
+              </p>
+              
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-white leading-tight">
+                Have a Project <br className="hidden sm:inline" />
+                in Mind?
+              </h2>
+
+              <p className="text-xs sm:text-sm text-[#C9C7C8] leading-relaxed max-w-md pt-1">
+                I am actively seeking opportunities to grow through internship programs, technical collaborations, or innovative projects. Let's discuss new opportunities and build something meaningful.
+              </p>
+            </div>
+
+            {/* Right Buttons / Actions matching reference layout */}
+            <div className="lg:col-span-6 flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-end gap-3">
+              
+              {/* Email Pill Box */}
+              <button
+                type="button"
+                onClick={copyEmail}
+                className="flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-[#1C1A1B] border border-white/10 hover:border-[#830000]/40 transition-all text-left group"
+                title="Click to copy email address"
+              >
+                <div className="w-10 h-10 rounded-xl bg-[#30282A] flex items-center justify-center text-[#830000] group-hover:scale-105 transition-transform">
+                  <Mail size={18} />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-blue-300 uppercase tracking-widest mb-1">LinkedIn</p>
-                  <p className="text-lg font-medium text-white group-hover:text-blue-300 transition-colors">Connect</p>
+                  <p className="text-[11px] font-bold text-white flex items-center gap-1.5">
+                    <span>Email Me</span>
+                    {copied && <span className="text-[10px] text-[#830000] font-normal">(Copied!)</span>}
+                  </p>
+                  <p className="text-[11px] text-[#A9A5A7] font-mono truncate max-w-[140px]">
+                    {email}
+                  </p>
                 </div>
-              </div>
-            </motion.a>
+              </button>
 
-            {/* GitHub */}
-            <motion.a
-              href="https://github.com/Firaa14"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.02 }}
-              className="group glass p-6 md:p-8 rounded-2xl border border-white/10 hover:border-slate-500/30 transition-all duration-300"
-            >
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-slate-500/20 to-slate-600/20 flex items-center justify-center flex-shrink-0 group-hover:from-slate-500/30 group-hover:to-slate-600/30 transition-all">
-                  <Github size={24} className="text-slate-300" />
+              {/* LinkedIn Pill Box */}
+              <a
+                href="https://www.linkedin.com/in/syafirafn"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-[#1C1A1B] border border-white/10 hover:border-[#830000]/40 transition-all text-left group"
+              >
+                <div className="w-10 h-10 rounded-xl bg-[#30282A] flex items-center justify-center text-[#B85C68] group-hover:scale-105 transition-transform">
+                  <Linkedin size={18} />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-slate-300 uppercase tracking-widest mb-1">GitHub</p>
-                  <p className="text-lg font-medium text-white group-hover:text-slate-300 transition-colors">Portfolio</p>
+                  <p className="text-[11px] font-bold text-white">LinkedIn</p>
+                  <p className="text-[11px] text-[#A9A5A7]">Let's connect</p>
                 </div>
-              </div>
-            </motion.a>
+              </a>
 
-            {/* Instagram */}
-            <motion.a
-              href="https://www.instagram.com/syfra_f"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.02 }}
-              className="group glass p-6 md:p-8 rounded-2xl border border-white/10 hover:border-pink-500/30 transition-all duration-300"
-            >
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-pink-500/20 to-rose-600/20 flex items-center justify-center flex-shrink-0 group-hover:from-pink-500/30 group-hover:to-rose-600/30 transition-all">
-                  <SiInstagram size={24} className="text-pink-400" />
-                </div>
-                <div>
-                  <p className="text-xs font-bold text-pink-300 uppercase tracking-widest mb-1">Instagram</p>
-                  <p className="text-lg font-medium text-white group-hover:text-pink-300 transition-colors">Follow</p>
-                </div>
-              </div>
-            </motion.a>
+              {/* Primary Call to Action Button */}
+              <a
+                href={`mailto:${email}?subject=Collaboration%20Inquiry%20-%20Portfolio`}
+                className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-[#830000] hover:bg-[#660000] text-white font-display font-bold text-sm transition-all duration-200 shadow-[0_0_25px_-5px_rgba(131,0,0,0.35)] hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto"
+              >
+                <span>Send a Message</span>
+                <ArrowRight size={16} strokeWidth={2.5} />
+              </a>
+
+            </div>
           </div>
 
-          {/* Social Media */}
-          <div className="space-y-4">
-           </div>
-      </motion.div>
+          {/* Social Icons row */}
+          <div className="mt-8 pt-8 border-t border-white/5 flex flex-wrap items-center justify-between gap-4">
+            <p className="text-xs text-[#A9A5A7]">
+              Direct connections:
+            </p>
+            <div className="flex items-center gap-3">
+              <a
+                href="https://github.com/Firaa14"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-xl bg-[#1C1A1B] border border-white/10 text-[#ECEAEC] hover:text-[#830000] hover:border-[#830000]/30 transition-colors"
+                title="GitHub"
+              >
+                <Github size={18} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/syafirafn"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-xl bg-[#1C1A1B] border border-white/10 text-[#ECEAEC] hover:text-[#830000] hover:border-[#830000]/30 transition-colors"
+                title="LinkedIn"
+              >
+                <Linkedin size={18} />
+              </a>
+              <a
+                href="https://www.instagram.com/syfra_f"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-xl bg-[#1C1A1B] border border-white/10 text-[#ECEAEC] hover:text-[#830000] hover:border-[#830000]/30 transition-colors"
+                title="Instagram"
+              >
+                <SiInstagram size={18} />
+              </a>
+            </div>
+          </div>
 
-      {/* Footer */}
-      <motion.footer
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.3 }}
-        className="mt-24 md:mt-32 pt-12 border-t border-white/5 text-center"
-      >
-        <p className="text-slate-500 text-xs md:text-sm uppercase tracking-[0.2em] font-medium">
-          © {new Date().getFullYear()} Syafira Firdausi Nuzulla — Portfolio
-        </p>
-        <p className="text-slate-600 text-xs mt-2">2026</p>
-      </motion.footer>
-    </Section>
+        </div>
+      </div>
+    </section>
   );
 }
