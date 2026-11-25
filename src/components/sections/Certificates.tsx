@@ -6,6 +6,13 @@ import { X } from 'lucide-react';
 
 const certificates = [
   {
+    title: "Certificate of Attending - Leadership Camp GenBI Malang",
+    issuer: "Vektor",
+    date: "November 2026",
+    description: "leaderhsip camp for GenBI Malang, focusing on developing leadership skills, teamwork, and strategic thinking in a collaborative environment.",
+    imageUrl: "/images/leadershipcamp.jpeg"
+  },
+  {
     title: "Microsoft Office Desktop Application",
     issuer: "Trust Training Partners with Universitas Brawijaya",
     date: "February 2026",

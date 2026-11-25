@@ -50,7 +50,7 @@ export default function CaseStudies() {
       title="In-Depth Product Stories"
       actionText="Read All Case Studies"
       actionHref="#case-studies"
-      subtitle="Deep-dive stories on real-world engineering challenges, from hydroelectric telemetry to national IoT competitions."
+      subtitle="Deep-dive stories on real-world engineering challenges."
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {caseStudies.map((study, idx) => (
